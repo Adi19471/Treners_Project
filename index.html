@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/adi.css">
+    <title>~::ADI::~</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-teal sticky-top">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+
+                    <img src="https://t4.ftcdn.net/jpg/04/74/24/71/360_F_474247187_7UwM7uXlvr0yuNknkLT1JgWbH2Ffj4JK.jpg" class="rounded" width="30px" height="40px" alt="MDB Logo" loading="lazy" /> </a>
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="text-reset me-3" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <img src="data:image/jpeg;base64,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"
+                            class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+    <!-- start image background-side -->
+
+
+    <section class="landing-section mt-1 ">
+        <div class="landing-wrapper d-flex flex-column  text-center align-center justify-content-center">
+            <h1 class="animate__animated animate__animated animate__flip">Welcome To <span class="text-teal">
+                    The Web Dev
+                </span>
+
+
+            </h1>
+            <sub class="text-success ">I'm Web Developer(MERN STACK DEVELOPER)</sub>
+            <p class="lead  tblack">As a Front End Dev I'm resposible to create creative layouts, That layouts should useful to other Developers can they use very easily in their Project and this help they work very easier
+
+            </p>
+
+            <i class="fa fa-play-circle fa-4x"></i>
+        </div>
+
+    </section>
+
+
+
+
+    <section>
+
+        <div class="p-5 bg-teal">
+            <div class="container-fluid">
+                <div class="row text-center text-white">
+                    <div class="col-sm-4">
+                        <i class="fab fa-dev fa-4x intro-icon p-3"></i>
+                        <h1>Web Development</h1>
+                        <p class="lead">As a Front End Dev I'm resposible to create creative layouts, That layouts should useful to other Developers can they use very easily in their Project and this help they work very easier</p>
+                    </div>
+
+
+                    <!-- nect2  -->
+                    <div class="col-sm-4">
+                        <i class="fab fa-connectdevelop fa-4x intro-icon p-3"></i>
+                        <h1>Web Designer</h1>
+                        <p class="lead">I'm Really enthusiastic to design a site before developing then the clients and users can get a overview what is the final product.</p>
+                    </div>
+
+
+                    <!-- nect3  -->
+                    <div class="col-sm-4">
+                        <i class="fab fa-react fa-4x intro-icon p-3"></i>
+                        <h1> MERN Stack Developers</h1>
+                        <p class="lead">Our dedicated MERN Stack developers provide exceptional web applications, be it for ERP (Enterprise Resource Planning), CMS (Content Management System), or eCommerce development; you get high-performance, cross-platform applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- /* Trining Information */ -->
+
+
+    <section class="mt-1 bg-darks">
+        <div class="p-5">
+            <div class="container-fluid ">
+                <div class="row">
+
+                    <div class="col">
+                        <h1 class="text-center display-6 text-white">I Devlope Diffrent Diffrent Layouts and Diffrent -Diffrent Frameworks with MERN Stack</h1>
+                        <p class="lead-mute text-white text-center">Sometimes will train the students in different technologies in various colleges it gives me more strength to go on in my life Based on my Interest I will write quotes,content preparation,Presentations and I'm a Blogger sometimes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- courses section -->
+
+    <div class="">
+        <div class="container-fluid bg-teal">
+            <div class="row text-center text-white">
+                <div class="col">
+
+                    <h2>Please Chose The Best Framework</h2>
+                    <p class="lead">We also established that when using React and Django together, React serves as the frontend (client-side framework), that handles the UI and getting & setting data via requests to the Django backend, which is an API built using the
+                        Django REST framework (DRF).</p>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+                        <img src="img/html.webp" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">HTML</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/css.png" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">CSS</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/javascript.png" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">JAVA SCRIPT</h5>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+                        <img src="img/bootstarp.jpg" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">BOOTSTRAP</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/reactjs.png" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">REACTJS</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/nodejs.png" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">NODE JS</h5>
+                    </div>
+                </div>
+
+
+                <div class="row text-center">
+                    <div class="col-md-4 ">
+                        <img src="img/mangodb.png" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">MONGOOS DB</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/MERN.png" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">MERN</h5>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/pdf.jpg" class="img-thubnailed gallery-img" alt="">
+                        <h5 class="text-white">PYTHON&DJANGO</h5>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- find best instuites area  -->
+    </div>
+
+    <div class="container bg-darks">
+        <div class="row text-center ">
+            <div class="col-md-8">
+                <h3 class="text-center text-white">Learn More Indias Best Instuites Except Me <i class="fa fa-smile fa-3 rounded-pill bg-danger"></i>
+                </h3>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-outline-white btn-lg">9398895448</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <section class="p-4 bg-teal">
+        <div class="container-fluid bg-teal">
+            <div class="row text-center text-white">
+                <div class="col-sm-6">
+                    <h2>REACT JS</h2>
+                    <p class="mute">
+                        React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.
+                    </p>
+
+
+                </div>
+
+                <div class="col-md-6">
+                    <img src="https://t3.ftcdn.net/jpg/03/79/06/44/240_F_379064415_yziUCkqT3E6X18fJH1Rp7hnaGUqQcm4Q.jpg" width="400px" class="img-bordered rounded-pill border-3  framework" alt="">
+                </div>
+            </div>
+
+
+
+
+            <div class="row text-center text-white mt-5">
+
+
+                <div class="col-md-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPGmL5nEdTowFoiV2mvjaUVJTb2bTegNm2A&usqp=CAU" class=" img-bordered rounded-pill framework border-3 " alt=" ">
+                </div>
+
+
+                <div class="col-sm-6 ">
+                    <h2>PYTHON DJANGO </h2>
+                    <p class="mute ">
+                        Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Meet the triners -->
+
+
+    <section class="p-5 bg-teal">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="">MY Trainers Helped Me My Life...</h1>
+                    <p class="lead text-warning"> “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”</p>
+                </div>
+            </div>
+
+            <!-- cards inforamtion -->
+
+            <div class="row mt-5">
+                <div class="col-sm-3 trainers-card">
+                    <div class=" card text-center bg-dark ">
+                        <div class="carb-body ">
+                            <img src="img/bhanu.jpg " alt=" " class="trainers-image "></div>
+
+                        <div class="card-title ">
+                            <h6 class="text-white ">BHANU SIR</h6>
+                        </div>
+                        <div class="card-text ">
+                            <p class="lead ">Mathematics is the music of reason. Mathematics knows no races or geographic boundaries.</p>
+
+                            <div class="icons bg-light ">
+                                <i class="fab fa-facebook fa-2x p-2 "></i>
+                                <i class="fab fa-youtube fa-2x p-2 "></i>
+                                <i class="fab fa-twitter fa-2x p-2 "></i>
+                                <i class="fab fa-github fa-2x p-2 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- second -->
+
+                <div class="col-sm-3 trainers-card ">
+                    <div class="card text-center bg-dark ">
+                        <div class="carb-body ">
+                            <img src="img/ratan.jpg " alt=" " class="trainers-image "></div>
+
+                        <div class="card-title ">
+                            <h6 class="text-white ">RATNA KUMAR SIR</h6>
+                        </div>
+                        <div class="card-text ">
+                            <p class="lead ">“Live as if you were to die tomorrow. ....</p>
+
+                            <div class="icons bg-light ">
+                                <i class="fab fa-facebook fa-2x p-2 "></i>
+                                <i class="fab fa-youtube fa-2x p-2 "></i>
+                                <i class="fab fa-twitter fa-2x p-2 "></i>
+                                <i class="fab fa-github fa-2x p-2 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- third -->
+                <div class="col-sm-3 trainers-card ">
+                    <div class="card text-center bg-dark ">
+                        <div class="carb-body ">
+                            <img src="img/narayana.jpg " alt=" " class="trainers-image "></div>
+
+                        <div class="card-title ">
+                            <h6 class="text-white ">NARAYANA SIR</h6>
+                        </div>
+                        <div class="card-text ">
+                            <p class="lead ">"Doing the best at this moment puts you in the best place for the next moment."</p>
+
+                            <div class="icons bg-light ">
+                                <i class="fab fa-facebook fa-2x p-2 "></i>
+                                <i class="fab fa-youtube fa-2x p-2 "></i>
+                                <i class="fab fa-twitter fa-2x p-2 "></i>
+                                <i class="fab fa-github fa-2x p-2 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- fouth -->
+
+                <div class="col-sm-3 trainers-card ">
+                    <div class="card text-center bg-dark ">
+                        <div class="carb-body ">
+                            <img src="img/ushen2.png " alt=" " class="trainers-image "></div>
+
+                        <div class="card-title ">
+                            <h6 class="text-white ">M.USEHENAI SIR</h6>
+                        </div>
+                        <div class="card-text ">
+                            <p class="lead ">"A dream does not become reality through magic; it takes sweat, determination, and hard work."</p>
+
+                            <div class="icons bg-light ">
+                                <i class="fab fa-facebook fa-2x p-2 "></i>
+                                <i class="fab fa-youtube fa-2x p-2 "></i>
+                                <i class="fab fa-twitter fa-2x p-2 "></i>
+                                <i class="fab fa-github fa-2x p-2 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container bg-teal">
+            <div class="row">
+
+                <div class="col">
+                    <h1 class="text-center">&#169 copyright Riserved By <span>THE WEB DEV ADI</span></h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MDB -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js "></script>
+</body>
+
+</html>
+
+</html>

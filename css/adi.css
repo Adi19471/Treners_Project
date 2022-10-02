@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg-teal {
+    background-color: rgb(73, 146, 146);
+}
+
+.text-teal {
+    color: teal;
+}
+
+
+/* landing detailes =========== */
+
+.landing-section {
+    background: white url('https://cdn.pixabay.com/photo/2020/12/18/19/27/team-5842784__480.jpg') no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.landing-wrapper {
+    height: 100%;
+    background-color: rgba(0.5, 0.5, 0.5, );
+}
+
+.landing-wrapper h1 {
+    font-size: 60px;
+}
+
+.tblack {
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.fa-play-circle {
+    color: rgb(39, 104, 104);
+    animation: glow-icon 1s infinite linear;
+    border: 0px double transparent;
+    margin: 0px auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+@keyframes glow-icon {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.07, 1.07);
+        box-shadow: 0 0 20px rgb(255, 250, 250);
+    }
+}
+
+.intro-icon {
+    border-radius: 50%;
+    background-color: black;
+    animation: icon 5s infinite linear;
+}
+
+@keyframes icon {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+    10% {
+        transform: scale(1.5, 1.5);
+        background: linear-gradient(50deg, navy, rgb(19, 170, 193), rgb(0, 0, 0));
+        font-size: 20px;
+    }
+}
+
+
+/* Trining Information */
+
+.bg-darks {
+    background: linear-gradient(120deg, teal, black);
+}
+
+
+/* gallery */
+
+.gallery-img {
+    border: 0px solid teal;
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 50px black;
+    border-radius: 5%;
+}
+
+.gallery-img:hover {
+    border: 12px solid rgb(0, 0, 0);
+    cursor: pointer;
+    width: 280px;
+    height: inherit;
+}
+
+.btn-outline-white {
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 20px;
+}
+
+.framework {
+    box-shadow: 0px 0px 10px black;
+    border: 200px ridge red;
+}
+
+
+/* trainers images */
+
+.trainers-image {
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: -30px;
+    border: 5px solid black;
+}
+
+.trainers-card {
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.trainers-card:hover {
+    transform: translateY(-50px);
+}
+
+.animate__flip {
+    color: red;
+    transition: all 0.5s;
+}
+
+.animate__flip:hover {
+    transform: translateY(50px);
+}
